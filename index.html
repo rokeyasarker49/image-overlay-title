@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Title</title>
+
+
+        <style>
+
+                * {box-sizing: border-box;}
+                .container {
+                        position: relative;
+                        width: 50%;
+                        max-width: 300px;
+                }
+                img {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+
+                }
+                .overlay{
+                        position: absolute;
+                        color: beige;
+                        bottom: 0;
+                        background: rgb(163, 129, 64);
+                        width: 100%;
+                        opacity: 0;
+                        transition: all 0.5s ease-in;
+                        font-size: 20px;
+                        padding: 20px;
+                        text-align: center;
+                     
+                }
+                .container:hover .overlay {
+                       opacity: 1;
+                }
+
+               
+                
+        </style>
+</head>
+<body>
+       <h1>Image Overlay Title</h1> 
+      
+       <p>Hover over the image to see the effect.</p>
+
+       <div class="container">
+        <img src="./img/kabba1.jpg">
+        <div class="overlay">
+                <div class="text col-md-12">
+                       Heart of a Muslim
+                </div>
+        </div>
+       </div>
+</body>
+</html>
